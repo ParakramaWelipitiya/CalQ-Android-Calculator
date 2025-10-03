@@ -1,0 +1,12 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#33FFFFFF"> <!-- semi-transparent white for subtle ripple -->
+
+    <!-- Optional rounded background to make it more stylish -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <corners android:radius="16dp"/> <!-- rounded corners -->
+        </shape>
+    </item>
+
+</ripple>

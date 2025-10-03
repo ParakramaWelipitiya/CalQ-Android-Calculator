@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/calqlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/calqlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CalQ"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="MoreActivity" />
+        <activity android:name="CurrencyConverterActivity" />
+        <activity android:name="LengthConverterActivity" />
+        <activity android:name="DateCalculatorActivity" />
+        <activity android:name=".WeightConverterActivity"/>
+        <activity android:name=".TemperatureConverterActivity"/>
+        <activity android:name=".VolumeConverterActivity"/>
+        <activity android:name=".AreaConverterActivity"/>
+        <activity android:name=".SpeedConverterActivity"/>
+        <activity android:name=".TimeConverterActivity"/>
+        <activity android:name=".PowerConverterActivity"/>
+        <activity android:name=".DataConverterActivity"/>
+        <activity android:name=".PressureConverterActivity"/>
+        <activity android:name=".AngleConverterActivity"/>
+        <activity android:name=".TermsActivity"/>
+        <activity android:name=".PrivacyActivity"/>
+        <activity android:name=".SettingsActivity"/>
+
+
+
+    </application>
+
+</manifest>

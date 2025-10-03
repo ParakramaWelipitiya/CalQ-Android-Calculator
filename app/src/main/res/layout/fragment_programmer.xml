@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/etDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Number"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:gravity="end"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:weightSum="4">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BIN"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OCT"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DEC"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHex"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HEX"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BIN: "
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+    <TextView
+        android:id="@+id/tvOct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OCT: "
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tvDec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEC: "
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/tvHex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HEX: "
+        android:textSize="14sp" />
+
+    <GridLayout
+        android:id="@+id/gridButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4"
+        android:rowCount="6"
+        android:useDefaultMargins="true"
+        android:layout_marginTop="6dp">
+
+        <Button android:id="@+id/btn7" style="@style/CalcButton" android:text="7" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btn8" style="@style/CalcButton" android:text="8" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btn9" style="@style/CalcButton" android:text="9" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnAND" style="@style/CalcButton" android:text="AND" android:textSize="14sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+
+        <Button android:id="@+id/btn4" style="@style/CalcButton" android:text="4" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btn5" style="@style/CalcButton" android:text="5" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btn6" style="@style/CalcButton" android:text="6" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnOR" style="@style/CalcButton" android:text="OR" android:textSize="14sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+
+        <Button android:id="@+id/btn1" style="@style/CalcButton" android:text="1" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btn2" style="@style/CalcButton" android:text="2" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btn3" style="@style/CalcButton" android:text="3" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnXOR" style="@style/CalcButton" android:text="XOR" android:textSize="14sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+
+        <Button android:id="@+id/btn0" style="@style/CalcButton" android:text="0" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnA" style="@style/CalcButton" android:text="A" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnB" style="@style/CalcButton" android:text="B" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnNOT" style="@style/CalcButton" android:text="NOT" android:textSize="14sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+
+        <Button android:id="@+id/btnC" style="@style/CalcButton" android:text="C" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnD" style="@style/CalcButton" android:text="D" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnE" style="@style/CalcButton" android:text="E" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnF" style="@style/CalcButton" android:text="F" android:textSize="18sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+
+        <Button android:id="@+id/btnClear" style="@style/CalcButton" android:text="C" android:textSize="14sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnBack" style="@style/CalcButton" android:text="←" android:textSize="14sp" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnEquals" style="@style/CalcButton" android:text="=" android:textSize="14sp" android:backgroundTint="@android:color/holo_green_dark" android:textColor="@android:color/white" android:textStyle="bold" android:layout_height="0dp" android:layout_rowWeight="1"/>
+        <Button android:id="@+id/btnSpace" style="@style/CalcButton" android:text=" " android:visibility="invisible" android:layout_height="0dp" android:layout_rowWeight="1"/>
+    </GridLayout>
+</LinearLayout>

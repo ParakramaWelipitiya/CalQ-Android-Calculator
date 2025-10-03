@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_standard"
+        android:title="Standard"
+        android:icon="@drawable/ic_standard"/>
+    <item
+        android:id="@+id/nav_scientific"
+        android:title="Scientific"
+        android:icon="@drawable/ic_scientific"/>
+    <item
+        android:id="@+id/nav_programmer"
+        android:title="Programmer"
+        android:icon="@drawable/ic_programmer"/>
+    <item
+        android:id="@+id/nav_more"
+        android:title="More"
+        android:icon="@drawable/ic_more"/>
+</menu>
